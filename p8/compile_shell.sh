@@ -4,7 +4,7 @@ PROBLEMPATH_SHELL=$3
 USERNAME=$4
 SUBMIT_NAME=$5
 
-cp $PROBLEMPATH_SHELL/main.cpp .
+#cp $PROBLEMPATH_SHELL/main.cpp .
 #cp $PROBLEMPATH_SHELL/*.h .
 
 g++ -std=c++17 main.cpp -o $EXEFILE_SHELL
