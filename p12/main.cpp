@@ -1,21 +1,19 @@
-#include <optional>
+#include "implement.h"
 #include <iostream>
 
 using namespace std;
 
-optional<int> div_int(int dividend, int divisor) {
-    if (divisor != 0) {
-        return {dividend / divisor};
-    }
-    return {}; // no return value
-}
-
 int main() {
-    auto res = div_int(20, 1);
-    if (res.has_value()) {
-        cout << "Quotient: " << res.value();
-    } else {
-        cout << "Can't divide.";
+    auto file1= read_file("1.txt");
+    if(file1){
+        cout<<file1.value()<<endl;
+    }else{
+        cout<<"File 1 read error."<<endl;
+    }
+    auto file2= read_file("2.txt");
+    if(file2){
+        cout<<file2.value()<<endl;
+    }else{
+        cout<<"File 2 read error."<<endl;
     }
 }
-
