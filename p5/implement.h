@@ -27,10 +27,10 @@ template<typename BaseClass>
 class FileOptVisitor {
 public:
     void visit(const DirNode &node) const {
-        ((BaseClass *) (this))->visitDirNode(node);
+        ((BaseClass*)this)->visitDirNode(node);
     }
 
     void visit(const TextNode &node) const {
-        ((BaseClass *) (this))->visitTextNode(node);
+        (static_cast<const BaseClass*>(this))->visitTextNode(node);
     }
 };

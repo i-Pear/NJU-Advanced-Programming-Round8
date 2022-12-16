@@ -1,11 +1,23 @@
 #include <cmath>
 
 template<typename T>
-bool Equal(T a, T b) {
-    return a == b;
-}
+class is_float {
+public:
+    static constexpr bool value = false;
+};
 
 template<>
-bool Equal(float a, float b) {
-    return std::abs(a - b) < 1e-3;
+class is_float<float> {
+public:
+    static constexpr bool value = true;
+};
+
+template<typename A>
+bool Equal(A a, A b) {
+    if constexpr(is_float<A>::value) {
+        abs()
+        return fabs(a - b) < 1e-3;
+    } else {
+        return a == b;
+    }
 }
