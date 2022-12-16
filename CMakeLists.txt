@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.24)
+project(OJ_8)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(p1 p1/main.cpp p1/implement.h)
+add_executable(p2 p2/main.cpp p2/implement.h)
+add_executable(p3 p3/main.cpp p3/implement.h)
+add_executable(p4 p4/main.cpp p4/implement.h)
+add_executable(p5 p5/main.cpp p5/implement.h)
+add_executable(p6 p6/main.cpp p6/implement.h)
+add_executable(p7 p7/main.cpp p7/implement.h)
+add_executable(p8 p8/main.cpp p8/implement.h)
+add_executable(p9 p9/main.cpp)
+add_executable(p10 p10/main.cpp)
+add_executable(p11 p11/main.cpp)
+add_executable(p12 p12/main.cpp)
