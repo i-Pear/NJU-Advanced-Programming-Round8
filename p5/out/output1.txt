@@ -1,5 +1,0 @@
-Entered [DirNode] dir1
-[TextNode] file1
-[TextNode] file2
-[TextNode] file3
-Exited [DirNode] dir1
