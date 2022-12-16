@@ -1,6 +1,8 @@
-#include <optional>
 #include <string>
+#include <tuple>
 
-std::optional<std::string> read_file(const std::string& filename){
-
+std::tuple<int, int> div_int(int dividend, int divisor) {
+    int quotient = dividend / divisor;
+    int remainder = dividend - quotient * divisor;
+    return {quotient, remainder};
 }
